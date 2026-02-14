@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make build",
+            "type": "shell",
+            "command": "make",
+            "args": ["run"],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Makefileのrunターゲットを実行します"
+        }
+    ]
+}

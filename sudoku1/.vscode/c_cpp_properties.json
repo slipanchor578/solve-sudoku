@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**"
             ],
             "compilerArgs": [
-                "-std=c23",
+                "-std=c11",
                 "-Wall",
                 "-Wextra",
                 "-pedantic-errors",
@@ -15,7 +15,7 @@
             ],
             "defines": ["DEBUG"],
             "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c23",
+            "cStandard": "c11",
             "intelliSenseMode": "linux-gcc-x64"
         }
     ],

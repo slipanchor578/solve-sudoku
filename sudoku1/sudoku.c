@@ -80,7 +80,7 @@ void free_grid(int** arr) {
 void print_grid(int** grid) {
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {
-            printf("%d", grid[i][j]);
+            printf("%d ", grid[i][j]);
         }
         putchar('\n');
     }
