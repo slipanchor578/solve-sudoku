@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "compilerArgs": [
+                "-std=c23",
+                "-Wall",
+                "-Wextra",
+                "-pedantic-errors",
+                "-march=native",
+                "-g"
+            ],
+            "defines": ["DEBUG"],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c23",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
