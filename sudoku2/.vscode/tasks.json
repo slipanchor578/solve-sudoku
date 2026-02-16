@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make build",
+            "type": "shell",
+            "command": "make",
+            "args": ["debug"],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Makefileのdebugターゲットを実行します"
+        }
+    ]
+}
