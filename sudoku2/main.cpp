@@ -21,10 +21,12 @@ int main() {
 
     if (file_data.empty()) {
         std::cerr << "入力データが無いので計算できません。" << std::endl;
+
+        // 後始末
         #ifdef DEBUG
-            // 後始末
             std::cin.rdbuf(cinbuf);
         #endif
+
         return 1;
     }
 
@@ -39,8 +41,8 @@ int main() {
 
     std::cout << "Backtack count: " << solver.get_backtrack_count() << std::endl;
 
+    // 後始末
     #ifdef DEBUG
-        // 後始末
         std::cin.rdbuf(cinbuf);
     #endif
 

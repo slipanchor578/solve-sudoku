@@ -8,7 +8,8 @@
 
 class SudokuSolver {
     public:
-        using Grid = std::array<std::array<int, 9>, 9>;
+        // これまで9x9の数独を表現するため二次元配列で持っていたのを一次元配列に変更
+        using Grid = std::array<int, 81>;
 
         explicit SudokuSolver(const std::string& data);
         bool solve();
@@ -19,7 +20,8 @@ class SudokuSolver {
         Grid grid_{};
         size_t backtrack_count_ = 0;
 
-        bool is_valid(int r, int c, int val) const;
+        // マス目番号posから行列番号(r, c)を生成するように変更
+        bool is_valid(int pos, int val) const;
         bool solve_recursive(int p);
 };
 
